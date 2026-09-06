@@ -1,0 +1,6 @@
+{
+  "name": "FoodRescue AI",
+  "description": "College canteen and mess food demand prediction, waste reduction, and surplus rescue platform powered by Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

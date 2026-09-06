@@ -1,0 +1,361 @@
+{
+  "departments": [
+    {
+      "id": "mess-1",
+      "name": "Hostel 1 & 2 Central Mess",
+      "baselineWasteMeals": 130,
+      "recentWasteMeals": 36,
+      "predictionAccuracy": 94.8,
+      "surplusRescuedMeals": 490
+    },
+    {
+      "id": "mess-2",
+      "name": "South Campus Dining Hall",
+      "baselineWasteMeals": 160,
+      "recentWasteMeals": 55,
+      "predictionAccuracy": 91.2,
+      "surplusRescuedMeals": 520
+    },
+    {
+      "id": "mess-3",
+      "name": "Engineering Block Cafeteria",
+      "baselineWasteMeals": 85,
+      "recentWasteMeals": 24,
+      "predictionAccuracy": 93.6,
+      "surplusRescuedMeals": 310
+    },
+    {
+      "id": "mess-4",
+      "name": "PG & Research Hostel Mess",
+      "baselineWasteMeals": 110,
+      "recentWasteMeals": 48,
+      "predictionAccuracy": 86.4,
+      "surplusRescuedMeals": 230
+    },
+    {
+      "id": "mess-5",
+      "name": "Girls Hostel Dining Complex",
+      "baselineWasteMeals": 125,
+      "recentWasteMeals": 41,
+      "predictionAccuracy": 92.0,
+      "surplusRescuedMeals": 440
+    }
+  ],
+  "recipientOrgs": [
+    {
+      "id": "org-1",
+      "name": "Asha Jyothi Community Kitchen",
+      "category": "Community Kitchen",
+      "address": "14 Station Road, Near Railway Junction, Ward 4",
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "distanceKm": 1.8,
+      "foodTypesAccepted": ["Cooked Meals", "Rice & Curries", "Breads / Roti"],
+      "typicalCapacityMeals": 150,
+      "contactPerson": "Ramesh Nair",
+      "phone": "+91 98450 12345",
+      "activeHours": "11:00 AM - 10:30 PM"
+    },
+    {
+      "id": "org-2",
+      "name": "St. Jude Shelter & Children's Home",
+      "category": "Shelter Home",
+      "address": "Plot 88, Rose Garden Lane, Civil Lines",
+      "lat": 12.9780,
+      "lng": 77.6020,
+      "distanceKm": 3.2,
+      "foodTypesAccepted": ["Cooked Meals", "Rice & Curries", "Fruits & Dairy"],
+      "typicalCapacityMeals": 80,
+      "contactPerson": "Sister Mary / Anand",
+      "phone": "+91 94480 87654",
+      "activeHours": "12:00 PM - 09:00 PM"
+    },
+    {
+      "id": "org-3",
+      "name": "Karuna City Night Shelter",
+      "category": "Night Shelter",
+      "address": "Old Bus Stand Complex, Sector 9",
+      "lat": 12.9640,
+      "lng": 77.5830,
+      "distanceKm": 4.5,
+      "foodTypesAccepted": ["Cooked Meals", "Breads / Roti", "Dry Ration"],
+      "typicalCapacityMeals": 120,
+      "contactPerson": "Govind Prasad",
+      "phone": "+91 98860 34567",
+      "activeHours": "06:00 PM - 11:30 PM"
+    },
+    {
+      "id": "org-4",
+      "name": "Samarpan Central Food Bank",
+      "category": "Food Bank",
+      "address": "Warehouse 3B, Industrial Ring Road",
+      "lat": 12.9520,
+      "lng": 77.6150,
+      "distanceKm": 6.1,
+      "foodTypesAccepted": ["Cooked Meals", "Rice & Curries", "Breads / Roti", "Dry Ration"],
+      "typicalCapacityMeals": 300,
+      "contactPerson": "Meera Sen",
+      "phone": "+91 97410 99881",
+      "activeHours": "09:00 AM - 11:00 PM"
+    },
+    {
+      "id": "org-5",
+      "name": "Sneha Sadan Senior Center",
+      "category": "Shelter Home",
+      "address": "45 Park View Avenue, Green Glen Layout",
+      "lat": 12.9820,
+      "lng": 77.5890,
+      "distanceKm": 2.6,
+      "foodTypesAccepted": ["Rice & Curries", "Cooked Meals", "Fruits & Dairy"],
+      "typicalCapacityMeals": 60,
+      "contactPerson": "Dr. V. K. Sharma",
+      "phone": "+91 99000 55432",
+      "activeHours": "11:30 AM - 08:30 PM"
+    }
+  ],
+  "surplusEntries": [
+    {
+      "id": "surplus-1",
+      "foodType": "Rice & Curries",
+      "quantityMeals": 65,
+      "location": "Hostel 1 & 2 Main Mess Kitchen",
+      "reportedAt": "2026-09-05T14:45:00.000Z",
+      "status": "available",
+      "notes": "Hot steamed basmati rice with mixed vegetable sambar in insulated containers"
+    },
+    {
+      "id": "surplus-2",
+      "foodType": "Breads / Roti",
+      "quantityMeals": 85,
+      "location": "South Campus Dining Hall",
+      "reportedAt": "2026-09-05T12:15:00.000Z",
+      "status": "available",
+      "notes": "Fresh whole wheat rotis kept wrapped in foil sheets, untouched"
+    },
+    {
+      "id": "surplus-3",
+      "foodType": "Cooked Meals",
+      "quantityMeals": 110,
+      "location": "Engineering Cafeteria Counter 2",
+      "reportedAt": "2026-09-05T06:30:00.000Z",
+      "status": "claimed",
+      "notes": "Claimed and dispatched to Asha Jyothi Community Kitchen at 08:15 AM"
+    }
+  ],
+  "events": [
+    {
+      "id": "evt-1",
+      "name": "Annual Inter-College Hackathon (36 hrs)",
+      "date": "2026-09-12",
+      "expectedAttendance": 480,
+      "description": "Round-the-clock student hackathon with participants arriving from 14 colleges. Extended midnight snacks & heavy lunch demand.",
+      "adjustmentRecommendation": {
+        "recommendedAdjustmentMeals": 140,
+        "adjustmentType": "increase",
+        "rationale": "High-intensity hackathon participants stay on campus continuously with higher carbohydrate & protein demand and staggered eating intervals.",
+        "recommendedDishes": ["Mix Veg Pulao", "Paneer Kathi Rolls", "Dal Makhani", "Tea & Sandwiches"]
+      }
+    },
+    {
+      "id": "evt-2",
+      "name": "Alumni Golden Jubilee Reunion Dinner",
+      "date": "2026-09-18",
+      "expectedAttendance": 620,
+      "description": "Formal alumni gathering with visiting dignitaries and families.",
+      "adjustmentRecommendation": {
+        "recommendedAdjustmentMeals": 220,
+        "adjustmentType": "increase",
+        "rationale": "High RSVP confirmation with 10% guest buffer; buffet-style dining will require consistent replenishment.",
+        "recommendedDishes": ["Biryani", "Shahi Paneer", "Gulab Jamun", "Roomali Roti"]
+      }
+    },
+    {
+      "id": "evt-3",
+      "name": "Mid-Semester Reading Recess (Low Footfall)",
+      "date": "2026-09-25",
+      "expectedAttendance": 210,
+      "description": "Majority of hostellers depart for weekend break; expected 55% reduction in student body.",
+      "adjustmentRecommendation": {
+        "recommendedAdjustmentMeals": -180,
+        "adjustmentType": "decrease",
+        "rationale": "Mass departures on Friday afternoon will sharply cut dinner demand; prepare strictly to confirmed headcounts.",
+        "recommendedDishes": ["Simple Khichdi", "Curd Rice", "Dal Tadka", "Seasonal Subzi"]
+      }
+    }
+  ],
+  "impactAssumptions": {
+    "perMealCostRupees": 45,
+    "perMealCo2Kg": 1.8,
+    "perMealWaterLiters": 250
+  },
+  "mealLogs": [
+    {
+      "id": "ml-14",
+      "date": "2026-09-04",
+      "dayOfWeek": "Friday",
+      "mealType": "Lunch",
+      "expectedAttendance": 600,
+      "actualAttendance": 582,
+      "prepared": 620,
+      "consumed": 585,
+      "surplus": 35,
+      "predicted": 590,
+      "predictedDemand": 590,
+      "predictionErrorPct": 0.85,
+      "costPerMeal": 45,
+      "actualEntered": true,
+      "dishes": [
+        { "name": "Steamed Rice", "prepared": 580, "consumed": 550, "surplus": 30 },
+        { "name": "Dal Tadka", "prepared": 420, "consumed": 395, "surplus": 25 },
+        { "name": "Vegetable Curry", "prepared": 390, "consumed": 320, "surplus": 70 },
+        { "name": "Chapati / Roti", "prepared": 1250, "consumed": 1180, "surplus": 70 },
+        { "name": "Paneer Butter Masala", "prepared": 360, "consumed": 352, "surplus": 8 },
+        { "name": "Sambar", "prepared": 320, "consumed": 280, "surplus": 40 }
+      ]
+    },
+    {
+      "id": "ml-13",
+      "date": "2026-09-03",
+      "dayOfWeek": "Thursday",
+      "mealType": "Lunch",
+      "expectedAttendance": 590,
+      "actualAttendance": 570,
+      "prepared": 615,
+      "consumed": 572,
+      "surplus": 43,
+      "predicted": 580,
+      "predictedDemand": 580,
+      "predictionErrorPct": 1.40,
+      "costPerMeal": 45,
+      "actualEntered": true,
+      "dishes": [
+        { "name": "Steamed Rice", "prepared": 570, "consumed": 535, "surplus": 35 },
+        { "name": "Dal Tadka", "prepared": 410, "consumed": 380, "surplus": 30 },
+        { "name": "Vegetable Curry", "prepared": 380, "consumed": 315, "surplus": 65 },
+        { "name": "Chapati / Roti", "prepared": 1200, "consumed": 1120, "surplus": 80 },
+        { "name": "Paneer Butter Masala", "prepared": 350, "consumed": 344, "surplus": 6 },
+        { "name": "Sambar", "prepared": 310, "consumed": 265, "surplus": 45 }
+      ]
+    },
+    {
+      "id": "ml-12",
+      "date": "2026-09-02",
+      "dayOfWeek": "Wednesday",
+      "mealType": "Lunch",
+      "expectedAttendance": 610,
+      "actualAttendance": 595,
+      "prepared": 630,
+      "consumed": 600,
+      "surplus": 30,
+      "predicted": 605,
+      "predictedDemand": 605,
+      "predictionErrorPct": 0.83,
+      "costPerMeal": 45,
+      "actualEntered": true,
+      "dishes": [
+        { "name": "Steamed Rice", "prepared": 590, "consumed": 565, "surplus": 25 },
+        { "name": "Dal Tadka", "prepared": 430, "consumed": 410, "surplus": 20 },
+        { "name": "Vegetable Curry", "prepared": 390, "consumed": 330, "surplus": 60 },
+        { "name": "Chapati / Roti", "prepared": 1280, "consumed": 1220, "surplus": 60 },
+        { "name": "Paneer Butter Masala", "prepared": 370, "consumed": 361, "surplus": 9 },
+        { "name": "Sambar", "prepared": 330, "consumed": 295, "surplus": 35 }
+      ]
+    },
+    {
+      "id": "ml-11",
+      "date": "2026-09-01",
+      "dayOfWeek": "Tuesday",
+      "mealType": "Lunch",
+      "expectedAttendance": 580,
+      "actualAttendance": 555,
+      "prepared": 610,
+      "consumed": 560,
+      "surplus": 50,
+      "predicted": 575,
+      "predictedDemand": 575,
+      "predictionErrorPct": 2.68,
+      "costPerMeal": 45,
+      "actualEntered": true,
+      "dishes": [
+        { "name": "Steamed Rice", "prepared": 570, "consumed": 525, "surplus": 45 },
+        { "name": "Dal Tadka", "prepared": 410, "consumed": 375, "surplus": 35 },
+        { "name": "Vegetable Curry", "prepared": 380, "consumed": 305, "surplus": 75 },
+        { "name": "Chapati / Roti", "prepared": 1220, "consumed": 1130, "surplus": 90 },
+        { "name": "Paneer Butter Masala", "prepared": 350, "consumed": 338, "surplus": 12 },
+        { "name": "Sambar", "prepared": 310, "consumed": 260, "surplus": 50 }
+      ]
+    },
+    {
+      "id": "ml-10",
+      "date": "2026-08-31",
+      "dayOfWeek": "Monday",
+      "mealType": "Lunch",
+      "expectedAttendance": 620,
+      "actualAttendance": 602,
+      "prepared": 645,
+      "consumed": 608,
+      "surplus": 37,
+      "predicted": 615,
+      "predictedDemand": 615,
+      "predictionErrorPct": 1.15,
+      "costPerMeal": 45,
+      "actualEntered": true,
+      "dishes": [
+        { "name": "Steamed Rice", "prepared": 600, "consumed": 570, "surplus": 30 },
+        { "name": "Dal Tadka", "prepared": 440, "consumed": 415, "surplus": 25 },
+        { "name": "Vegetable Curry", "prepared": 400, "consumed": 335, "surplus": 65 },
+        { "name": "Chapati / Roti", "prepared": 1300, "consumed": 1220, "surplus": 80 },
+        { "name": "Paneer Butter Masala", "prepared": 380, "consumed": 371, "surplus": 9 },
+        { "name": "Sambar", "prepared": 340, "consumed": 300, "surplus": 40 }
+      ]
+    },
+    {
+      "id": "ml-9",
+      "date": "2026-08-30",
+      "dayOfWeek": "Sunday",
+      "mealType": "Lunch",
+      "expectedAttendance": 450,
+      "actualAttendance": 425,
+      "prepared": 485,
+      "consumed": 430,
+      "surplus": 55,
+      "predicted": 445,
+      "predictedDemand": 445,
+      "predictionErrorPct": 3.49,
+      "costPerMeal": 45,
+      "actualEntered": true,
+      "dishes": [
+        { "name": "Steamed Rice", "prepared": 450, "consumed": 400, "surplus": 50 },
+        { "name": "Dal Tadka", "prepared": 330, "consumed": 290, "surplus": 40 },
+        { "name": "Vegetable Curry", "prepared": 310, "consumed": 240, "surplus": 70 },
+        { "name": "Chapati / Roti", "prepared": 950, "consumed": 850, "surplus": 100 },
+        { "name": "Paneer Butter Masala", "prepared": 280, "consumed": 268, "surplus": 12 },
+        { "name": "Sambar", "prepared": 260, "consumed": 215, "surplus": 45 }
+      ]
+    },
+    {
+      "id": "ml-8",
+      "date": "2026-08-29",
+      "dayOfWeek": "Saturday",
+      "mealType": "Lunch",
+      "expectedAttendance": 470,
+      "actualAttendance": 448,
+      "prepared": 500,
+      "consumed": 455,
+      "surplus": 45,
+      "predicted": 465,
+      "predictedDemand": 465,
+      "predictionErrorPct": 2.20,
+      "costPerMeal": 45,
+      "actualEntered": true,
+      "dishes": [
+        { "name": "Steamed Rice", "prepared": 465, "consumed": 425, "surplus": 40 },
+        { "name": "Dal Tadka", "prepared": 340, "consumed": 305, "surplus": 35 },
+        { "name": "Vegetable Curry", "prepared": 320, "consumed": 255, "surplus": 65 },
+        { "name": "Chapati / Roti", "prepared": 1000, "consumed": 910, "surplus": 90 },
+        { "name": "Paneer Butter Masala", "prepared": 290, "consumed": 280, "surplus": 10 },
+        { "name": "Sambar", "prepared": 270, "consumed": 230, "surplus": 40 }
+      ]
+    }
+  ]
+}
